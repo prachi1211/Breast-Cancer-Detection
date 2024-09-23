@@ -1,0 +1,194 @@
+{% extends "base.html" %} {% block content %}
+
+<h2 style="color: #6b0037; margin-left: 35%;">Cancer Identification</h2>
+
+<style>
+    body {
+        background-image: url("./static/images/img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .label {
+        font-size: 27px;
+        color: #000000;
+    }
+
+    input {
+        font-size: 25px;
+        width: 300px;
+        height: 40px;
+    }
+
+    .detail-cont {
+        /* margin-left: 20%; */
+        padding-top: 25px;
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .detail-form {
+        width: 20%;
+        display: inline;
+    }
+
+    .detail-que {
+        width: 60%;
+        padding-left: 100px;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .display {
+        border: 2px solid black;
+        display: flex;
+        height: auto;
+        margin-bottom: 5%;
+
+    }
+
+    .img-dis {
+        display: inline;
+    }
+
+    .dis-js {
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 30px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    input[type=radio] {
+        width: 18px;
+        height: 18px;
+    }
+</style>
+
+<div>
+
+    <div class="detail-cont">
+        <form>
+            <div class="detail-form">
+                <label class="label">Name:</label>
+                <br><input type="text" name="fname" id="name" class="textbox" required> <br>
+
+                <label class="label">Age:</label>
+                <br><input type="text" name="age" id="age" class="textbox" required> <br>
+
+                <label class="label">Gender</label>
+                <br><input type="text" name="gender" id="gender" class="textbox" required> <br>
+
+                <label class="label">Contact no.:</label>
+                <br><input type="text" name="contact" id="number" class="textbox" required> <br>
+
+            </div>
+        </form>
+        <br>
+
+        <div class="detail-que">
+            <label class="label">Any close relative who had diagnose with breast cancer?</label><br>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="select1" id="Yes1" value="Yes1">
+            <label for="No">No</label>
+            <input type="radio" name="select1" id="No1" value="No1" class="red">
+
+            <br>
+
+            <label class="label">Do you have a habit of smoking or drinking?</label><br>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="select2" id="Yes2" value="Yes2">
+            <label for="No">No</label>
+            <input type="radio" name="select2" id="No2" value="No2" class="red">
+
+            <br>
+
+            <label class="label">Did you periods started before age of 12?</label><br>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="select3" id="Yes3" value="Yes3">
+            <label for="No">No</label>
+            <input type="radio" name="select3" id="No3" value="No3" class="red">
+
+            <br>
+
+            <label class="label">Use of contraceptive pill?</label><br>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="select4" id="Yes4" value="Yes4">
+            <label for="No">No</label>
+            <input type="radio" name="select4" id="No4" value="No4" class="red">
+
+            <br>
+
+            <label class="label">First child after age of 35?</label><br>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="select5" id="Yes5" value="Yes5">
+            <label for="No">No</label>
+            <input type="radio" name="select5" id="No5" value="No5" class="red">
+
+            <br>
+
+            <label class="label">Menopause after age 52?</label><br>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="select6" id="Yes6" value="Yes6">
+            <label for="No">No</label>
+            <input type="radio" name="select6" id="No6" value="No6">
+            <label for="age">age<52</label>
+                    <input type="radio" name="select6" id="age less than 52" value="age less than 52" class="red">
+        </div>
+    </div>
+
+    <br>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="display">
+        <div class="img-dis">
+            <div class="image-section" style="display:none;">
+                <div class="img-preview">
+                    <div id="imagePreview">
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+                </div>
+            </div>
+
+            <div class="loader" style="display:none;"></div>
+
+            <h3 id="result">
+                <span> </span>
+            </h3>
+        </div>
+
+        <!-- <button type="button" onclick="display()">
+            Submit
+        </button> -->
+
+        <div class="dis-js">
+            <p id="data1"></p>
+            <p id="data2"></p>
+            <p id="data3"></p>
+            <p id="data4"></p>
+            <p id="result1"></p>
+            <p id="result2"></p>
+            <p id="result3"></p>
+            <p id="result4"></p>
+            <p id="result5"></p>
+            <p id="result6"></p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

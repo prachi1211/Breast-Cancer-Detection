@@ -1,0 +1,52 @@
+Stage 0:--> This is also called ductal carcinoma in situ. The cancerous cells are only within the ducts and have not spread to surrounding tissues.
+	--> 
+Stage 1:--> At this stage, the tumor measures up to 2 centimeters (cm) across. It has not affected any lymph nodes, or there are small groups of cancer cells in lymph nodes.
+	-->
+Stage 2:--> The tumor is 2 cm across and has started to spread to nearby nodes, or it is 2–5 cm across and has not spread to the lymph nodes.
+	-->
+Stage 3:--> The tumor is up to 5 cm across and has spread to several lymph nodes, or the tumor is larger than 5 cm and has spread to a few lymph nodes.
+	-->
+Stage 4:--> The cancer has spread to distant organs, most often the bones, liver, brain, or lungs.
+	-->
+
+c/nc , reason
+yes , yes --> list ans....
+no , yes --> you should some precution and also you can have health checkup yearly....
+yes , no --> you can have a biopsy test and have a visit to a doctor....
+
+List of Questions:--
+1)Age ?
+2)Any close relative who diagnose with breast cancer?
+==>5% to 10% breast cancer is sometime depends upon a genes passed from perents to children.
+
+3)do you have a habit of smoking or drinking?
+==>Research has indiccate that habit of alchohole or tobacco can be a major reason.
+
+4)did you periods started before age of 12?
+==>Because of your early start your period cycle is also one the reason.
+
+-->When you go through the menopause? (age 52+)
+==>menopause after 52 can also be a cause for cancer.
+
+5)more use of contraceptive pill?
+==> 
+
+6)do you ever had abortion?
+==> 
+
+7)first child after age of 30?
+==> 
+
+
+
+
+
+
+--> sym..
+armpit or breast pain does not change with the monthly cycle
+pitting, like the surface of an orange, or color changes such as redness in the skin of the breast
+a rash around or on one nipple
+discharge from a nipple, which may contain blood
+a sunken or inverted nipple
+a change in the size or shape of the breast
+peeling, flaking, or scaling of the skin of the breast or nipple
